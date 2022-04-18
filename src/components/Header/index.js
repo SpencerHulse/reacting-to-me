@@ -3,12 +3,12 @@ import logo from "../../assets/logo.png";
 
 function Header() {
   return (
-    <div className="">
+    <header>
       <div className="logo">
         <img src={logo} alt="" />
       </div>
       <Navigation />
-    </div>
+    </header>
   );
 }
 
