@@ -1,9 +1,12 @@
 import Navigation from "../Navigation";
+import logo from "../../assets/logo.png";
 
 function Header() {
   return (
     <div className="">
-      <h2 className="">Digital Portfolio</h2>
+      <div className="logo">
+        <img src={logo} alt="" />
+      </div>
       <Navigation />
     </div>
   );
