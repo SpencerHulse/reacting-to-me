@@ -1,5 +1,7 @@
+import AboutMe from "../AboutMe";
+
 function Project() {
-  return;
+  return <AboutMe />;
 }
 
 export default Project;
