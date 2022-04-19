@@ -1,13 +1,18 @@
 import Navigation from "../Navigation";
 import logo from "../../assets/logo.png";
 
-function Header() {
+function Header(props) {
+  const { currentSection, setCurrentSection } = props;
+
   return (
     <header>
       <div className="logo">
         <img src={logo} alt="" />
       </div>
-      <Navigation />
+      <Navigation
+        currentSection={currentSection}
+        setCurrentSection={setCurrentSection}
+      />
     </header>
   );
 }

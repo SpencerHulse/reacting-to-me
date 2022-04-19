@@ -152,10 +152,15 @@ header {
   padding: 0 10px;
 }
 
-.navbar-item:hover {
+.navbar-item:hover,
+.nav-item:hover {
   color: var(--color-accent);
   opacity: 0.7;
   cursor: pointer;
+}
+
+.navActive {
+  color: var(--color-accent) !important;
 }
 
 .nav-list {
@@ -169,15 +174,11 @@ header {
   padding: 0;
 }
 
-.nav-link {
+.nav-item {
   color: inherit;
   font-weight: var(--fw-bold);
   font-size: var(--fs-h2);
-  text-decoration: none;
-}
-
-.nav-link:hover {
-  color: var(--color-accent);
+  cursor: pointer;
 }
 
 .nav-toggle {

@@ -1,4 +1,6 @@
-function Navigation() {
+function Navigation(props) {
+  const { currentSection, setCurrentSection } = props;
+
   function toggleNav() {
     document.body.classList.toggle("nav-open");
   }
@@ -9,16 +11,51 @@ function Navigation() {
 
   return (
     <>
+      {/* Navbar for larger screens */}
       <div className="navbar-container">
         <nav className="navbar">
           <ul className="navbar-list">
-            <li className="navbar-item">About Me</li>
-            <li className="navbar-item">My Work</li>
-            <li className="navbar-item">Contact Info</li>
-            <li className="navbar-item">Resume</li>
+            <li
+              className={`navbar-item ${
+                currentSection === "About Me" && "navActive"
+              }`}
+              key="About Me"
+            >
+              <span onClick={() => setCurrentSection("About Me")}>
+                About Me
+              </span>
+            </li>
+            <li
+              className={`navbar-item ${
+                currentSection === "My Work" && "navActive"
+              }`}
+              key="My Work"
+            >
+              <span onClick={() => setCurrentSection("My Work")}>My Work</span>
+            </li>
+            <li
+              className={`navbar-item ${
+                currentSection === "Contact Info" && "navActive"
+              }`}
+              key="Contact Info"
+            >
+              <span onClick={() => setCurrentSection("Contact Info")}>
+                Contact Info
+              </span>
+            </li>
+            <li
+              className={`navbar-item ${
+                currentSection === "Resume" && "navActive"
+              }`}
+              key="Resume"
+            >
+              <span onClick={() => setCurrentSection("Resume")}>Resume</span>
+            </li>
           </ul>
         </nav>
       </div>
+
+      {/* Hamburger for smaller screens */}
       <button
         className="nav-toggle"
         aria-label="toggle navigation"
@@ -28,30 +65,41 @@ function Navigation() {
       </button>
       <nav className="nav">
         <ul className="nav-list">
-          <li className="nav-item">
-            <a href="/#about" className="nav-link" onClick={closeNav}>
-              About Me
-            </a>
+          <li
+            className={`nav-item ${
+              currentSection === "About Me" && "navActive"
+            }`}
+            key="About Me Hamburger"
+            onClick={closeNav}
+          >
+            <span onClick={() => setCurrentSection("About Me")}>About Me</span>
           </li>
-          <li className="nav-item">
-            <a href="/#work" className="nav-link" onClick={closeNav}>
-              My Work
-            </a>
+          <li
+            className={`nav-item ${
+              currentSection === "My Work" && "navActive"
+            }`}
+            key="My Work Hamburger"
+            onClick={closeNav}
+          >
+            <span onClick={() => setCurrentSection("My Work")}>My Work</span>
           </li>
-          <li className="nav-item">
-            <a href="/#contact" className="nav-link" onClick={closeNav}>
+          <li
+            className={`nav-item ${
+              currentSection === "Contact Info" && "navActive"
+            }`}
+            key="Contact Info Hamburger"
+            onClick={closeNav}
+          >
+            <span onClick={() => setCurrentSection("Contact Info")}>
               Contact Info
-            </a>
+            </span>
           </li>
-          <li className="nav-item">
-            <a
-              href="/files/Spencer Hulse's Resume.pdf"
-              className="nav-link"
-              onClick={closeNav}
-              target="_blank"
-            >
-              Resume
-            </a>
+          <li
+            className={`nav-item ${currentSection === "Resume" && "navActive"}`}
+            key="Resume Hamburger"
+            onClick={closeNav}
+          >
+            <span onClick={() => setCurrentSection("Resume")}>Resume</span>
           </li>
         </ul>
       </nav>
