@@ -35,12 +35,12 @@ function Navigation(props) {
             </li>
             <li
               className={`navbar-item ${
-                currentSection === "Contact Info" && "navActive"
+                currentSection === "Contact Me" && "navActive"
               }`}
-              key="Contact Info"
+              key="Contact Me"
             >
-              <span onClick={() => setCurrentSection("Contact Info")}>
-                Contact Info
+              <span onClick={() => setCurrentSection("Contact Me")}>
+                Contact Me
               </span>
             </li>
             <li
@@ -85,13 +85,13 @@ function Navigation(props) {
           </li>
           <li
             className={`nav-item ${
-              currentSection === "Contact Info" && "navActive"
+              currentSection === "Contact Me" && "navActive"
             }`}
-            key="Contact Info Hamburger"
+            key="Contact Me Hamburger"
             onClick={closeNav}
           >
-            <span onClick={() => setCurrentSection("Contact Info")}>
-              Contact Info
+            <span onClick={() => setCurrentSection("Contact Me")}>
+              Contact Me
             </span>
           </li>
           <li

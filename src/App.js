@@ -12,7 +12,7 @@ function App() {
         currentSection={currentSection}
         setCurrentSection={setCurrentSection}
       />
-      <Project />
+      <Project currentSection={currentSection} />
       <Footer />
     </div>
   );

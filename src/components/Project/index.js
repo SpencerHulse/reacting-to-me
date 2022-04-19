@@ -1,11 +1,17 @@
 import AboutMe from "../AboutMe";
 import MyWork from "../MyWork";
+import Contact from "../Contact";
+import Resume from "../Resume";
 
-function Project() {
+function Project(props) {
+  const { currentSection } = props;
+
   return (
     <>
-      <AboutMe />
-      <MyWork />
+      {currentSection === "About Me" && <AboutMe />}
+      {currentSection === "My Work" && <MyWork />}
+      {currentSection === "Contact Me" && <Contact />}
+      {currentSection === "Resume" && <Resume />}
     </>
   );
 }
