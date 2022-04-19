@@ -9,6 +9,16 @@ function Navigation() {
 
   return (
     <>
+      <div className="navbar-container">
+        <nav className="navbar">
+          <ul className="navbar-list">
+            <li className="navbar-item">About Me</li>
+            <li className="navbar-item">My Work</li>
+            <li className="navbar-item">Contact Info</li>
+            <li className="navbar-item">Resume</li>
+          </ul>
+        </nav>
+      </div>
       <button
         className="nav-toggle"
         aria-label="toggle navigation"
@@ -18,11 +28,6 @@ function Navigation() {
       </button>
       <nav className="nav">
         <ul className="nav-list">
-          <li className="nav-item">
-            <a href="/" className="nav-link" onClick={closeNav}>
-              Home
-            </a>
-          </li>
           <li className="nav-item">
             <a href="/#about" className="nav-link" onClick={closeNav}>
               About Me

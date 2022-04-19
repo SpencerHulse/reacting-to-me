@@ -17,6 +17,7 @@
 
   --fs-h1: 3rem;
   --fs-h2: 2.25rem;
+  --fs-navbar: 1.75rem;
   --fs-h3: 1.25rem;
   --fs-body: 1rem;
 
@@ -136,6 +137,27 @@ header {
   transition: transform 250ms cubic-bezier(0.5, 0, 0.5, 1);
 }
 
+.navbar-container {
+  display: none;
+}
+
+.navbar-list {
+  display: flex;
+  list-style: none;
+}
+
+.navbar-item {
+  font-size: var(--fs-navbar);
+  font-weight: var(--fw-bold);
+  padding: 0 10px;
+}
+
+.navbar-item:hover {
+  color: var(--color-accent);
+  opacity: 0.7;
+  cursor: pointer;
+}
+
 .nav-list {
   list-style: none;
   display: flex;
@@ -167,6 +189,7 @@ header {
   right: 1em;
   top: 1em;
   z-index: 9999;
+  display: block;
 }
 
 .nav-open .nav {
@@ -497,6 +520,16 @@ header {
   }
 }
 
+/* navigation media query */
+@media (min-width: 800px) {
+  .nav-toggle {
+    display: none;
+  }
+
+  .navbar-container {
+    display: block;
+  }
+}
 /* intro media query */
 @media (min-width: 600px) {
   .intro {
