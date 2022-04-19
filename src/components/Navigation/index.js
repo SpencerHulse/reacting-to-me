@@ -12,7 +12,11 @@ function Navigation(props) {
   return (
     <>
       {/* Navbar for larger screens */}
-      <div className="navbar-container">
+      <div
+        className={`navbar-container ${
+          currentSection === "About Me" && "navbar-container-conditional"
+        }`}
+      >
         <nav className="navbar">
           <ul className="navbar-list">
             <li

@@ -1,14 +1,15 @@
 import Navigation from "../Navigation";
-import logo from "../../assets/logo.png";
 
 function Header(props) {
   const { currentSection, setCurrentSection } = props;
 
   return (
     <header>
-      <div className="logo">
-        <img src={logo} alt="" />
-      </div>
+      {currentSection !== "About Me" && (
+        <div className="header-name-container">
+          <h2 className="header-name">Spencer</h2>
+        </div>
+      )}
       <Navigation
         currentSection={currentSection}
         setCurrentSection={setCurrentSection}
