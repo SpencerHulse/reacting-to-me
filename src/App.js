@@ -7,14 +7,16 @@ function App() {
   const [currentSection, setCurrentSection] = useState("About Me");
 
   return (
-    <div>
+    <>
       <Header
         currentSection={currentSection}
         setCurrentSection={setCurrentSection}
       />
-      <Project currentSection={currentSection} />
+      <main>
+        <Project currentSection={currentSection} />
+      </main>
       <Footer />
-    </div>
+    </>
   );
 }
 

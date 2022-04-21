@@ -39,6 +39,11 @@ body {
   line-height: 1.6;
 }
 
+main,
+.form-container {
+  min-height: calc(100vh - 175px);
+}
+
 section {
   padding: 5em 2em;
 }
@@ -126,7 +131,6 @@ header {
 
 .header-name {
   font-size: 2.25rem;
-  color: var(--color-accent);
   padding: 5px 20px 10px 0;
   border-right: none;
 }
@@ -399,6 +403,78 @@ header {
   }
 }
 
+/* Contact Form */
+.form-container {
+  display: flex;
+  flex-direction: column;
+  font-weight: var(--fw-bold);
+  background-color: var(--color-dark);
+  color: var(--color-light);
+  align-items: center;
+  justify-content: center;
+}
+
+.form-container h3 {
+  font-size: var(--fs-h2);
+  color: var(--color-accent);
+}
+
+form {
+  width: 600px;
+}
+
+.form-inputs-container {
+  display: block;
+}
+
+.form-inputs:first-child {
+  padding-right: 100px;
+}
+
+label {
+  display: block;
+}
+
+input {
+  font-size: 1rem;
+  min-width: 250px;
+  padding: 0.25rem;
+  border: 1px solid var(--color-dark);
+  outline: none;
+  border-radius: 3px;
+  transition: box-shadow 0.2s;
+}
+
+input:focus {
+  border: 1px solid var(--secondary);
+  box-shadow: 0 0 0.25rem rgba(0, 0, 0, 0.5);
+}
+
+textarea {
+  width: 80vw;
+  max-width: 600px;
+  min-width: 250px;
+  height: 120px;
+  border: 1px solid var(--color-dark);
+  padding: 5px;
+}
+
+.contact-form-button {
+  font-size: 1.25rem;
+  text-decoration: none;
+  padding: 0.5rem 2rem;
+  border-radius: 0.5rem;
+  border: none;
+  outline: none;
+  color: var(--color-light);
+  cursor: pointer;
+  background-color: var(--color-accent);
+}
+
+.contact-form-button:hover {
+  opacity: 0.7;
+}
+
 /* contacts - footer */
 .footer {
   font-size: var(--fs-h3);
@@ -533,10 +609,18 @@ header {
   }
 }
 
+/* general media query */
+@media (min-width: 800px) {
+  main,
+  .form-container {
+    min-height: calc(100vh - 227.188px);
+  }
+}
+
 /* navigation media query */
 @media (min-width: 800px) {
   .header-name {
-    border-right: 5px solid var(--color-accent);
+    border-right: 5px solid var(--color-dark);
   }
 
   .nav-toggle {
@@ -622,6 +706,13 @@ header {
 
   .about-me-img-large {
     display: block;
+  }
+}
+
+/* contact form media query */
+@media (min-width: 800px) {
+  .form-inputs-container {
+    display: flex;
   }
 }
 

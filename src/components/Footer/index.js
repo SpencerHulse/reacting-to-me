@@ -32,6 +32,16 @@ function Footer() {
             <i className="fa-brands fa-linkedin"></i>
           </a>
         </li>
+        <li className="social-list-item">
+          <a
+            className="social-list-link"
+            href="https://stackoverflow.com/users/17171973/spencer"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <i className="fa-brands fa-stack-overflow"></i>
+          </a>
+        </li>
       </ul>
     </footer>
   );
