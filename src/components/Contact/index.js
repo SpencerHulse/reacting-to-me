@@ -45,7 +45,7 @@ function ContactForm() {
   return (
     <div className="form-container">
       <h3>Contact Me</h3>
-      <p>
+      <p className="form-paragraph">
         You can also reach out through any of the accounts listed in the footer.
       </p>
       <form id="contact-form" onSubmit={handleSubmit}>
