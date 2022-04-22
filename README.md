@@ -1,70 +1,48 @@
-# Getting Started with Create React App
+# reacting-to-me
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Description
 
-## Available Scripts
+This is a version of my portfolio created using React. It utilizes the necessary components and practices to be a SPA. The application includes an about me page, a page to showcase some of my best work, a contact form page, and a page that lists my skills and links to a copy of my resume.
 
-In the project directory, you can run:
+The entire app uses React components, which are rendered as needed. The current section a visitor is on is stored using state, which ensures only certain parts of the application are rendered.
 
-### `npm start`
+The about me page is the main page of the application and introduces me.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+On the page that demonstrates my work, nine projects are listed, along with the technologies used and links to the repo and the deployed application. It is set to reveal the links and technologies used when hovered over, though there is a hover: none media query used to ensure the links show up on mobile devices.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+The contact form is currently only the front-end, but it will quickly have a back-end created, completing the MERN stack. Additionally, there are links to my social media profiles in the footer. My email address is also there for easy contact.
 
-### `npm test`
+Lastly, the resume page includes a link to a copy of my resume and a list of some of my proficiencies.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+A lot of work also went into make the site mobile-first and responsive, including the addition of a hamburger on smaller devices to replace the header. There is also the revealed links when hover is not possible, an overall responsive design, and different pictures and layouts in certain areas to match the needs of the user.
 
-### `npm run build`
+A live version of the app can be found on [GitHub Pages](https://spencerhulse.github.io/reacting-to-me/).
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+![alt text](./assets/screenshot.png)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Table of Contents
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- [Installation](#installation)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [Questions](#questions)
 
-### `npm run eject`
+## Installation
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+To install, simply clone the repo and packages.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Usage
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Launch using React with "npm start".
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Contributing
 
-## Learn More
+The project is not accepting any contributions at this time.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Questions
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+If you have any questions, feel free to contact me. Thanks!
 
-### Code Splitting
+Email: hulse.spencer@gmail.com
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+GitHub: [SpencerHulse](https://github.com/SpencerHulse)
