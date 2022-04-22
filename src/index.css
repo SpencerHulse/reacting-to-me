@@ -41,7 +41,8 @@ body {
 
 main,
 .form-container,
-.resume-container {
+.resume-container,
+.work-container {
   min-height: calc(100vh - 180px);
 }
 
@@ -304,6 +305,10 @@ header {
 }
 
 /* my work */
+.work-container {
+  background-color: var(--color-dark);
+}
+
 .my-work {
   background-color: var(--color-dark);
   color: var(--color-light);
@@ -319,7 +324,7 @@ header {
 .project-container {
   position: relative;
   text-align: center;
-  background: var(--color-accent);
+  background: var(--color-dark);
   overflow: hidden;
 }
 
@@ -330,28 +335,53 @@ header {
 
 .portfolio-container:hover .portfolio-img,
 .portfolio-item:focus .portfolio-img {
-  transform: scale(1.2);
-  opacity: 0.75;
+  transform: scale(1.1);
+  opacity: 0.35;
 }
 
 .portfolio-info {
   position: absolute;
-  top: 0;
-  left: 0;
-  font-weight: var(--fw-bold);
-  font-size: var(--fs-h3);
-  background-color: var(--color-accent);
-  color: var(--color-light);
-  display: none;
-}
-
-.portfolio-info {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   margin: 0;
   width: 100%;
+  font-weight: var(--fw-bold);
+  font-size: 30px;
+  color: var(--color-light);
+  text-shadow: -1px 1px 2px #000, 1px 1px 2px #000, 1px -1px 0 #000,
+    -1px -1px 0 #000;
 }
 
 .portfolio-info span {
   display: block;
+}
+
+.portfolio-item-links {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.portfolio-link,
+.repository-link {
+  text-decoration: none;
+  color: var(--color-light);
+}
+
+.github-portfolio-link {
+  font-size: 50px;
+}
+
+.github-portfolio-link:hover,
+.repository-link:hover,
+.portfolio-link:hover {
+  color: var(--color-accent);
+}
+
+.github-portfolio-link:focus,
+.repository-link:focus,
+.portfolio-link:focus {
+  outline: none;
 }
 
 .portfolio-info-toggle {
@@ -670,7 +700,8 @@ textarea {
 @media (min-width: 800px) {
   main,
   .form-container,
-  .resume-container {
+  .resume-container,
+  .work-container {
     min-height: calc(100vh - 232.188px);
   }
 }
