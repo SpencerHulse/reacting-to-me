@@ -40,7 +40,8 @@ body {
 }
 
 main,
-.form-container {
+.form-container,
+.resume-container {
   min-height: calc(100vh - 180px);
 }
 
@@ -492,6 +493,45 @@ textarea {
   opacity: 0.7;
 }
 
+/* resume style start */
+.resume-container {
+  background-color: var(--color-dark);
+  color: var(--color-light);
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+}
+
+.resume-download-paragraph {
+  font-size: var(--fs-h3);
+  padding: 20px 60px 40px;
+  margin: 0 auto;
+}
+
+.resume-link {
+  text-decoration: none;
+  color: var(--color-accent);
+  font-weight: var(--fw-bold);
+}
+
+.resume-link:hover {
+  opacity: 0.7;
+  text-decoration: underline;
+}
+
+.skills-container {
+  display: black;
+}
+
+.skills-list-container {
+  padding: 20px 60px;
+}
+
+.skills-li::marker {
+  color: var(--color-accent);
+  font-size: 25px;
+}
+
 /* contacts - footer */
 .footer {
   font-size: var(--fs-h3);
@@ -629,7 +669,8 @@ textarea {
 /* general media query */
 @media (min-width: 800px) {
   main,
-  .form-container {
+  .form-container,
+  .resume-container {
     min-height: calc(100vh - 232.188px);
   }
 }
@@ -738,6 +779,18 @@ textarea {
     width: 80vw;
     max-width: 600px;
     min-width: 250px;
+  }
+}
+
+/* resume media query */
+@media (min-width: 800px) {
+  .resume-container {
+    justify-content: center;
+    align-items: center;
+  }
+
+  .skills-container {
+    display: flex;
   }
 }
 
