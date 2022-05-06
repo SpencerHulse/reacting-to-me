@@ -1,32 +1,22 @@
 import { useState } from "react";
-import { validateEmail, capitalizeFirstLetter } from "../../utils/helpers";
+import { capitalizeFirstLetter } from "../../utils/helpers";
 
 function ContactForm() {
   // State is initially an empty object with the same variables as the form
   const [formState, setFormState] = useState({
+    subject: "",
     name: "",
-    email: "",
     message: "",
   });
   const [errorMessage, setErrorMessage] = useState("");
 
-  const { name, email, message } = formState;
+  const { subject, name, message } = formState;
 
   function handleChange(e) {
-    if (e.target.name === "email") {
-      const isValid = validateEmail(e.target.value);
-
-      if (!isValid) {
-        setErrorMessage("Your email is invalid.");
-      } else {
-        setErrorMessage("");
-      }
+    if (!e.target.value.length) {
+      setErrorMessage(`${capitalizeFirstLetter(e.target.name)} is required.`);
     } else {
-      if (!e.target.value.length) {
-        setErrorMessage(`${capitalizeFirstLetter(e.target.name)} is required.`);
-      } else {
-        setErrorMessage("");
-      }
+      setErrorMessage("");
     }
 
     if (!errorMessage) {
@@ -34,38 +24,31 @@ function ContactForm() {
     }
   }
 
-  function handleSubmit(e) {
-    e.preventDefault();
-    console.log(formState);
-  }
-
-  // Putting the console log inside handleChange would cause a delay due to its async nature
-  // console.log(formState);
-
   return (
     <div className="form-container">
       <h3>Contact Me</h3>
       <p className="form-paragraph">
-        You can also reach out through any of the accounts listed in the footer.
+        Fill out the form and click submit to send me an email. Alternatively,
+        you can reach out through any of the accounts listed in the footer.
       </p>
-      <form id="contact-form" onSubmit={handleSubmit}>
+      <form id="contact-form">
         <div className="form-inputs-container">
           <div className="form-inputs">
-            <label htmlFor="name">Name:</label>
+            <label htmlFor="subject">Subject:</label>
             <input
               type="text"
-              name="name"
-              defaultValue={name}
+              name="subject"
+              defaultValue={subject}
               /* onBlur, unlike onChange, only fires when focus is moved */
               onBlur={handleChange}
             />
           </div>
           <div className="form-inputs">
-            <label htmlFor="email">Email address:</label>
+            <label htmlFor="name">Your name:</label>
             <input
-              type="email"
-              name="email"
-              defaultValue={email}
+              type="name"
+              name="name"
+              defaultValue={name}
               onBlur={handleChange}
             />
           </div>
@@ -85,9 +68,14 @@ function ContactForm() {
             <p className="error-text">{errorMessage}</p>
           </div>
         )}
-        <button className="contact-form-button" type="submit">
+        <a
+          href={`mailto:hulse.spencer@gmail.com?subject=${name} — ${subject}&body=${message}`}
+          className="contact-form-button"
+          target="_blank"
+          rel="noreferrer"
+        >
           Submit
-        </button>
+        </a>
       </form>
     </div>
   );
