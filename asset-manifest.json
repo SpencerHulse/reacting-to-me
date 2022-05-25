@@ -1,15 +1,16 @@
 {
   "files": {
     "main.css": "/reacting-to-me/static/css/main.7f1c3367.css",
-    "main.js": "/reacting-to-me/static/js/main.8ba50a6c.js",
+    "main.js": "/reacting-to-me/static/js/main.671b5793.js",
     "static/media/tenantively.png": "/reacting-to-me/static/media/tenantively.5b119a3ec48b29a54e18.png",
     "static/media/alexander-the-great.png": "/reacting-to-me/static/media/alexander-the-great.3b54a69f64436013d893.png",
     "static/media/standing-casual-cropped.JPG": "/reacting-to-me/static/media/standing-casual-cropped.41376efe26d3ab7c8202.JPG",
     "static/media/walnut-street-bridge.jpg": "/reacting-to-me/static/media/walnut-street-bridge.eb3772a1d8945edf2390.jpg",
     "static/media/standing-casual-small.JPG": "/reacting-to-me/static/media/standing-casual-small.4e5927161008da9d59ac.JPG",
+    "static/media/nsense.png": "/reacting-to-me/static/media/nsense.187ed10c9249a43eb05c.png",
     "static/media/spencer-profile-pic.jpg": "/reacting-to-me/static/media/spencer-profile-pic.87bc7d5036799951d976.jpg",
     "static/media/weather-dashboard.png": "/reacting-to-me/static/media/weather-dashboard.fe3061e997c38a663762.png",
-    "static/media/Spencer Hulse's Resume.pdf": "/reacting-to-me/static/media/Spencer Hulse's Resume.0b84fb25487643fbca80.pdf",
+    "static/media/Spencer Hulse's Resume.pdf": "/reacting-to-me/static/media/Spencer Hulse's Resume.cdf440a192d5ec4af7cc.pdf",
     "static/media/js-code-quiz.png": "/reacting-to-me/static/media/js-code-quiz.0033b9cdadda7d230584.png",
     "static/media/say-what-you-will.png": "/reacting-to-me/static/media/say-what-you-will.fabdf99f156cf60f7683.png",
     "static/media/work-day-scheduler.png": "/reacting-to-me/static/media/work-day-scheduler.0003c96ca3b62638368e.png",
@@ -18,10 +19,10 @@
     "static/media/so-on-that-note.png": "/reacting-to-me/static/media/so-on-that-note.35e32a8f558ee9d5629f.png",
     "index.html": "/reacting-to-me/index.html",
     "main.7f1c3367.css.map": "/reacting-to-me/static/css/main.7f1c3367.css.map",
-    "main.8ba50a6c.js.map": "/reacting-to-me/static/js/main.8ba50a6c.js.map"
+    "main.671b5793.js.map": "/reacting-to-me/static/js/main.671b5793.js.map"
   },
   "entrypoints": [
     "static/css/main.7f1c3367.css",
-    "static/js/main.8ba50a6c.js"
+    "static/js/main.671b5793.js"
   ]
 }
