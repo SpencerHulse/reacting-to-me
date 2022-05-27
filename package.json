@@ -1,44 +1,24 @@
 {
   "name": "reacting-to-me",
-  "version": "0.1.0",
-  "private": true,
-  "homepage": "https://spencerhulse.github.io/reacting-to-me",
-  "dependencies": {
-    "@testing-library/jest-dom": "^5.16.4",
-    "@testing-library/react": "^13.1.1",
-    "@testing-library/user-event": "^13.5.0",
-    "react": "^18.0.0",
-    "react-dom": "^18.0.0",
-    "react-scripts": "5.0.1",
-    "web-vitals": "^2.1.4"
-  },
+  "version": "1.0.0",
+  "description": "This is a version of my portfolio created using React. It utilizes the necessary components and practices to be a SPA. The application includes an about me page, a page to showcase some of my best work, a contact form page, and a page that lists my skills and links to a copy of my resume.",
+  "main": "index.js",
   "scripts": {
-    "start": "react-scripts start",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "concurrently \"cd server && npm run watch\" \"cd client && npm start\""
   },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SpencerHulse/reacting-to-me.git"
   },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SpencerHulse/reacting-to-me/issues"
   },
-  "devDependencies": {
-    "gh-pages": "^3.2.3"
+  "homepage": "https://github.com/SpencerHulse/reacting-to-me#readme",
+  "dependencies": {
+    "concurrently": "^7.2.1"
   }
 }
