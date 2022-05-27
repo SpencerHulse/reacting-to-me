@@ -7,6 +7,7 @@ import taskMasterPro from "../../assets/taskmaster-pro.png";
 import workDayScheduler from "../../assets/work-day-scheduler.png";
 import jsCodeQuiz from "../../assets/js-code-quiz.png";
 import alexanderTheGreat from "../../assets/alexander-the-great.png";
+import nsense from "../../assets/nsense.png";
 
 function MyWork() {
   return (
@@ -18,6 +19,33 @@ function MyWork() {
         </p>
 
         <div className="portfolio">
+          {/* portfolio item */}
+          <div className="project-container">
+            <div className="portfolio-container">
+              <img src={nsense} alt="" className="portfolio-img" />
+              <div className="portfolio-info">
+                <p className="portfolio-item-links">
+                  <a
+                    href="https://n-sense.herokuapp.com/"
+                    className="portfolio-link"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    E-commerce
+                  </a>
+                  <a
+                    className="repository-link"
+                    href="https://github.com/SpencerHulse/n-sense"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <i className="fa-brands fa-github github-portfolio-link"></i>
+                  </a>
+                </p>
+                <span>React / MongoDB / Tailwind</span>
+              </div>
+            </div>
+          </div>
           {/* portfolio item */}
           <div className="project-container">
             <div className="portfolio-container">
