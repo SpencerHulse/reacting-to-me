@@ -2,10 +2,14 @@
   "name": "reacting-to-me",
   "version": "1.0.0",
   "description": "This is a version of my portfolio created using React. It utilizes the necessary components and practices to be a SPA. The application includes an about me page, a page to showcase some of my best work, a contact form page, and a page that lists my skills and links to a copy of my resume.",
-  "main": "index.js",
+  "main": "server/server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "concurrently \"cd server && npm run watch\" \"cd client && npm start\""
+    "start": "node server/server.js",
+    "build": "cd client && npm run build",
+    "develop": "concurrently \"cd server && npm run watch\" \"cd client && npm start\"",
+    "develop-tailwind": "concurrently \"cd server && npm run watch\" \"cd client && npm run start-tailwind\"",
+    "install": "cd server && npm i && cd ../client && npm i",
+    "seed": "cd server && npm run seed"
   },
   "repository": {
     "type": "git",
