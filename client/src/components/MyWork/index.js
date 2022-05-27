@@ -14,7 +14,6 @@ function MyWork() {
           {workData.map((project, i) => {
             const { projectName, imageSrc, deployedLink, repoLink, mainTech } =
               project;
-            console.log(projectName);
 
             return (
               <div className="project-container" key={i}>
