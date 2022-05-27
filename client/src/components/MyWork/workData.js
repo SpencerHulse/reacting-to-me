@@ -4,7 +4,7 @@ const workData = [
     imageSrc: "nsense.png",
     deployedLink: "https://n-sense.herokuapp.com/",
     repoLink: "https://github.com/SpencerHulse/n-sense",
-    mainTech: "React / MongoDB / Tailwind",
+    mainTech: "MERN / GraphQL / Redux / Tailwind",
   },
   {
     projectName: "Property Listings",
@@ -12,6 +12,13 @@ const workData = [
     deployedLink: "https://glacial-temple-16968.herokuapp.com/",
     repoLink: "https://github.com/SpencerHulse/tenantively-maybe-probably",
     mainTech: "Node / AWS s3 Bucket / Sequelize",
+  },
+  {
+    projectName: "Book List",
+    imageSrc: "who-needs-a-librarian.png",
+    deployedLink: "https://who-needs-a-librarian.herokuapp.com/",
+    repoLink: "https://github.com/SpencerHulse/who-needs-a-librarian",
+    mainTech: "MERN / GraphQL",
   },
   {
     projectName: "Job Aggregator",
@@ -62,13 +69,6 @@ const workData = [
     imageSrc: "js-code-quiz.png",
     deployedLink: "https://spencerhulse.github.io/the-ultimate-js-code-quiz/",
     repoLink: "https://github.com/SpencerHulse/the-ultimate-js-code-quiz",
-    mainTech: "JavaScript",
-  },
-  {
-    projectName: "Tribute Page",
-    imageSrc: "alexander-the-great.png",
-    deployedLink: "https://spencerhulse.github.io/alexander-tg-tribute/",
-    repoLink: "https://github.com/SpencerHulse/alexander-tg-tribute",
     mainTech: "JavaScript",
   },
 ];

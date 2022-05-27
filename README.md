@@ -10,7 +10,7 @@ The about me page is the main page of the application and introduces me.
 
 On the page that demonstrates my work, nine projects are listed, along with the technologies used and links to the repo and the deployed application. It is set to reveal the links and technologies used when hovered over, though there is a hover: none media query used to ensure the links show up on mobile devices.
 
-The contact form is currently only the front-end, but it will quickly have a back-end created, completing the MERN stack. Additionally, there are links to my social media profiles in the footer. My email address is also there for easy contact.
+The contact form uses nodemailer to email me a copy of the message entered into the form.
 
 Lastly, the resume page includes a link to a copy of my resume and a list of some of my proficiencies.
 
@@ -18,7 +18,7 @@ A lot of work also went into make the site mobile-first and responsive, includin
 
 A live version of the app can be found on [GitHub Pages](https://spencerhulse.github.io/reacting-to-me/).
 
-![alt text](./assets/screenshot.png)
+![alt text](./client/assets/screenshot.png)
 
 ## Table of Contents
 
