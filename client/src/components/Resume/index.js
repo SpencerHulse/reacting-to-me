@@ -1,4 +1,5 @@
 import resume from "../../assets/files/Spencer Hulse's Resume.pdf";
+import { frontEndSkills, backEndSkills } from "./skillData";
 
 function Resume() {
   return (
@@ -19,27 +20,25 @@ function Resume() {
         <div className="skills-list-container">
           <h3>Front-end Proficiencies</h3>
           <ul>
-            <li className="skills-li">HTML</li>
-            <li className="skills-li">CSS</li>
-            <li className="skills-li">JavaScript</li>
-            <li className="skills-li">jQuery</li>
-            <li className="skills-li">Responsive Design</li>
-            <li className="skills-li">Mobile-first Design</li>
-            <li className="skills-li">React</li>
-            <li className="skills-li">Bootstrap</li>
+            {frontEndSkills.map((skill, i) => {
+              return (
+                <li className="skills-li" key={`front${i}`}>
+                  {skill}
+                </li>
+              );
+            })}
           </ul>
         </div>
         <div className="skills-list-container">
           <h3>Back-end Proficiencies</h3>
           <ul>
-            <li className="skills-li">APIs</li>
-            <li className="skills-li">REST</li>
-            <li className="skills-li">Node</li>
-            <li className="skills-li">Express</li>
-            <li className="skills-li">MySQL - Sequelize</li>
-            <li className="skills-li">MongoDB - Mongoose</li>
-            <li className="skills-li">IndexedDB</li>
-            <li className="skills-li">PWAs</li>
+            {backEndSkills.map((skill, i) => {
+              return (
+                <li className="skills-li" key={`back${i}`}>
+                  {skill}
+                </li>
+              );
+            })}
           </ul>
         </div>
       </div>
