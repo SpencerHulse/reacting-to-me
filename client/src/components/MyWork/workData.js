@@ -1,10 +1,17 @@
 const workData = [
   {
     projectName: "E-commerce",
+    imageSrc: "Sellouts.png",
+    deployedLink: "https://sellouts.herokuapp.com/",
+    repoLink: "https://github.com/SpencerHulse/sellouts",
+    mainTech: "MERN / GraphQL / AWS / Redux / Stripe",
+  },
+  {
+    projectName: "E-commerce",
     imageSrc: "nsense.png",
     deployedLink: "https://n-sense.herokuapp.com/",
     repoLink: "https://github.com/SpencerHulse/n-sense",
-    mainTech: "MERN / GraphQL / Redux / Tailwind",
+    mainTech: "MERN / GraphQL / Redux / Tailwind / Stripe",
   },
   {
     projectName: "Property Listings",
