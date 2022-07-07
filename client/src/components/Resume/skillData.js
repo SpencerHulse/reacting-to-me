@@ -1,11 +1,10 @@
 export const frontEndSkills = [
   "JavaScript",
+  "Python",
   "jQuery",
-  "Responsive Design",
-  "Mobile-first Design",
+  "Mobile-First Design",
   "React",
   "Bootstrap",
-  "Styled Components",
   "Redux Toolkit",
   "IndexedDB",
 ];
@@ -17,7 +16,6 @@ export const backEndSkills = [
   "Express",
   "MySQL - Sequelize",
   "MongoDB - Mongoose",
-  "PWAs",
   "GraphQL",
   "JWT",
 ];
